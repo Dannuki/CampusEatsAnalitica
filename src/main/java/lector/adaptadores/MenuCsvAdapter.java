@@ -8,9 +8,7 @@ import lector.CodificacionHelper;
 import lector.FuenteDeDatos;
 import modelo.Plato;
 
-/**
- * Adaptador para leer el menú de platos desde un archivo CSV.
- */
+//Adaptador para leer el menú de platos desde un archivo CSV.
 public class MenuCsvAdapter implements FuenteDeDatos<Plato> {
     private final Path ruta;
 

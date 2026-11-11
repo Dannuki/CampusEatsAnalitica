@@ -1,9 +1,5 @@
 package modelo;
 
-/**
- *
- * @author USUARIO
- */
 public record Plato(
     int idPlato, 
     String nombrePlato, 

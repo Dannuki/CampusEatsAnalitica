@@ -8,23 +8,14 @@ import modelo.LineaPedido;
 import modelo.Pago;
 
 /**
- * Filtro que comprueba la consistencia financiera entre los pedidos y las
- * transacciones de pasarela.
- * Exige que cada pedido posea al menos una transacción con estado APROBADA en
- * la pasarela, cuya referencia coincida con el número de pedido y cuyo monto
- * sea igual al total del pedido
+ * Filtro que comprueba la consistencia financiera entre los pedidos y las transacciones de pasarela.
+ * Exige que cada pedido posea al menos una transacción con estado APROBADA en la pasarela, cuya referencia coincida con el número de pedido y cuyo monto sea igual al total del pedido
  */
 public class PagoAprobado implements Filtro {
 
     private static final double TOLERANCIA = 0.001;
     private final Map<String, List<Double>> montosAprobadosPorPedido;
 
-    /**
-     * Construye el filtro indexando los pagos con estado APROBADA por su referencia
-     * de pedido.
-     *
-     * @param pagos lista de pagos registrados en la pasarela
-     */
     public PagoAprobado(List<Pago> pagos) {
         this.montosAprobadosPorPedido = new HashMap<>();
         if (pagos != null) {

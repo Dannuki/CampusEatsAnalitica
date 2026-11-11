@@ -11,15 +11,9 @@ import metricas.TicketPromedio;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("==========================================================================");
         System.out.println("                 CAMPUS EATS - MODULO DE ANALITICA                        ");
-        System.out.println("==========================================================================");
 
-        Path configPath = Path.of("C:/Users/RICH/Downloads/CampusEatsAnalitica/config/fuentes.json");
-        if (!java.nio.file.Files.exists(configPath)) {
-            configPath = Path.of("config/fuentes.json");
-        }
-
+        Path configPath = Path.of("config/fuentes.json");
         RepoAnalitica repo = new RepoAnaliticaMemoria();
         List<Metrica<?>> metricas = List.of(
             new PlatosTop(),

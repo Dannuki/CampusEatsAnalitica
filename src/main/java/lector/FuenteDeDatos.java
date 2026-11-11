@@ -6,10 +6,6 @@ package lector;
 
 import java.util.List;
 
-/**
- *
- * @author USUARIO
- */
 
 public interface FuenteDeDatos<T> {
     List<T> leer();

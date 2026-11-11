@@ -12,10 +12,6 @@ import lector.adaptadores.AppPedidosJsonAdapter;
 import lector.adaptadores.MenuCsvAdapter;
 import lector.adaptadores.PasarelaCsvAdapter;
 
-/**
- *
- * @author USUARIO
- */
 public class FabricaDeFuentes {
     private final Map<String, Function<Path, FuenteDeDatos<?>>> mapaConstructores;
 

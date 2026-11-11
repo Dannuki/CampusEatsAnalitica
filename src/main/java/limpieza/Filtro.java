@@ -9,19 +9,9 @@ import modelo.LineaPedido;
  */
 public interface Filtro {
 
-    /**
-     * Nombre representativo del filtro.
-     *
-     * @return nombre del filtro
-     */
     String nombre();
 
-    /**
-     * Aplica la regla correspondiente sobre la lista de líneas de pedido.
-     *
-     * @param lineas lista de líneas de entrada
-     * @return lista resultante tras aplicar la regla
-     */
+
     List<LineaPedido> aplicar(List<LineaPedido> lineas);
 }
 

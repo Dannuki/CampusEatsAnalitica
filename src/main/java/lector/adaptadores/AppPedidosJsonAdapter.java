@@ -11,9 +11,7 @@ import lector.FuenteDeDatos;
 import modelo.LineaPedido;
 import modelo.Pedido;
 
-/**
- * Adaptador para leer pedidos desde un archivo JSON proveniente de la aplicación móvil.
- */
+//Adaptador para leer pedidos desde un archivo JSON proveniente de la aplicación móvil.
 public class AppPedidosJsonAdapter implements FuenteDeDatos<Pedido> {
     private final Path ruta;
     private final ObjectMapper objectMapper;

@@ -37,9 +37,6 @@ public class Pipeline {
     /**
      * Ejecuta secuencialmente todos los filtros configurados sobre la lista de líneas.
      * Imprime en consola un informe tabular del proceso y deja las estadísticas disponibles.
-     *
-     * @param lineasIniciales líneas de pedido sin filtrar
-     * @return lista resultante tras pasar por todos los filtros
      */
     public List<LineaPedido> ejecutar(List<LineaPedido> lineasIniciales) {
         ultimasEstadisticas.clear();
@@ -67,10 +64,6 @@ public class Pipeline {
         return actuales;
     }
 
-    /**
-     * Devuelve las estadísticas de la última ejecución del pipeline.
-     * @return 
-     */
     public List<EstadisticaFiltro> getUltimasEstadisticas() {
         return Collections.unmodifiableList(ultimasEstadisticas);
     }
