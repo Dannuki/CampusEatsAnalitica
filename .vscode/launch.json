@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Campus Eats Analitica",
+      "request": "launch",
+      "mainClass": "servicio.Main",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
